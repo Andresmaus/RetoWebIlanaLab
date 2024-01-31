@@ -12,10 +12,8 @@ Feature: Automated Testing using Selenium at DemoQA.com
   Scenario Outline: Complete and submit the form correctly
     When I select the Forms module in the menu and then select Practice Form
     And I fill out the form with valid information "<firstName>" "<lastName>" "<email>" "<mobile>" "<dateBirth>"
-    Then I verify that the content is visible.
-      | content   |
-      | <content> |
+    Then I verify that the content is visible "<content>"
 
     Examples:
-      | firstName | lastName | email                      | mobile     | dateBirth  | content |
-      | Andres    | Sanchez  | andressanchez@ilanalab.com | 1234567890 | 01/01/1990 | Form    |
+      | firstName | lastName | email                      | mobile     | dateBirth  | content                        |
+      | Andres    | Sanchez  | andressanchez@ilanalab.com | 1234567890 | 01/01/1990 | Thanks for submitting the form |

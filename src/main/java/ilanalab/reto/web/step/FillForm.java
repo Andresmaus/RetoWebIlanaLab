@@ -12,6 +12,8 @@ public class FillForm {
         repositorioForm.email_txt.sendKeys(email);
         repositorioForm.gender_rdbtn.click();
         repositorioForm.mobileNumber_txt.sendKeys(mobile);
-        repositorioForm.birth.sendKeys(dateBirth);
+        repositorioForm.birth.clear();
+        repositorioForm.birth.sendKeys();
+        repositorioForm.submit_btn.click();
     }
 }

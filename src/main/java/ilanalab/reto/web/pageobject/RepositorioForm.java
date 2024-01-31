@@ -23,7 +23,7 @@ public class RepositorioForm extends PageObject {
     @FindBy(id = "userEmail")
     public WebElementFacade email_txt;
 
-    @FindBy(id = "gender-radio-1")
+    @FindBy(xpath = "//label[contains(text(),'Male')]")
     public WebElementFacade gender_rdbtn;
 
     @FindBy(id = "userNumber")
@@ -34,4 +34,7 @@ public class RepositorioForm extends PageObject {
 
     @FindBy(id = "submit")
     public WebElementFacade submit_btn;
+
+    @FindBy(id = "example-modal-sizes-title-lg")
+    public WebElementFacade mensaje;
 }

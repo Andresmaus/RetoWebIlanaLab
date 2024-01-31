@@ -31,9 +31,7 @@ public class PracticeFormDefinitions {
         fillForm.writeData(firstName,lastName,email,mobile,dateBirth);
     }
 
-    @Then("I verify that the content is visible.")
-    public void iVerifyThatTheContentIsVisible() {
+    @Then("I verify that the content is visible {string}")
+    public void iVerifyThatTheContentIsVisible(String mensaje) {
     }
-
-
 }

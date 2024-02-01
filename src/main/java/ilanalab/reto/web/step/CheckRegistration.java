@@ -10,10 +10,5 @@ public class CheckRegistration {
     public void message(String messageResponse){
         String textoBuscado = repositorioForm.mensaje.getText();
         assertThat(textoBuscado, containsString(messageResponse));
-        System.out.println("*********************************** ");
-        System.out.println(" ");
-        System.out.println("Mensaje Validado:  " + textoBuscado);
-        System.out.println(" ");
-        System.out.println("*********************************** ");
     }
 }

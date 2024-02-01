@@ -1,5 +1,6 @@
 package ilanalab.reto.web.definitions;
 
+import ilanalab.reto.web.step.CheckRegistration;
 import ilanalab.reto.web.step.FillForm;
 import ilanalab.reto.web.step.OpenDemoQaStep;
 import ilanalab.reto.web.step.SearchForm;
@@ -16,6 +17,8 @@ public class PracticeFormDefinitions {
     SearchForm searchForm;
     @Steps
     FillForm fillForm;
+    @Steps
+    CheckRegistration checkRegistration;
 
 
 
@@ -36,5 +39,6 @@ public class PracticeFormDefinitions {
 
     @Then("I verify that the content is visible {string}")
     public void iVerifyThatTheContentIsVisible(String mensaje) {
+        checkRegistration.message(mensaje);
     }
 }

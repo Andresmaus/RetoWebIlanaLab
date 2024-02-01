@@ -2,6 +2,7 @@ package ilanalab.reto.web.step;
 
 import ilanalab.reto.web.pageobject.RepositorioForm;
 import net.serenitybdd.annotations.Step;
+import org.openqa.selenium.Keys;
 
 public class FillForm {
     private RepositorioForm repositorioForm;
@@ -13,7 +14,9 @@ public class FillForm {
         repositorioForm.gender_rdbtn.click();
         repositorioForm.mobileNumber_txt.sendKeys(mobile);
         repositorioForm.birth.clear();
-        repositorioForm.birth.sendKeys();
+        repositorioForm.birth.sendKeys("", Keys.ENTER);
         repositorioForm.submit_btn.click();
     }
+
+
 }

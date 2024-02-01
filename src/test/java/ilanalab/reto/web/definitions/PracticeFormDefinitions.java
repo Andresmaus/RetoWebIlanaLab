@@ -16,6 +16,9 @@ public class PracticeFormDefinitions {
     SearchForm searchForm;
     @Steps
     FillForm fillForm;
+
+
+
     @Given("that Andres accesses the DemoQA app")
     public void thatAndresAccessesTheDemoQAApp() {
         openDemoQaStep.url();

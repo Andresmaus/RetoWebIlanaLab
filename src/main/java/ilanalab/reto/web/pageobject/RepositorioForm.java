@@ -38,6 +38,6 @@ public class RepositorioForm extends PageObject {
     @FindBy(id = "example-modal-sizes-title-lg")
     public WebElementFacade mensaje;
 
-    @FindBy(xpath = "//button[@onclick='jsprompt()']")
-    public WebElementFacade closeModal;
+    @FindBy(id = "currentAddress")
+    public WebElementFacade current;
 }

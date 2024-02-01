@@ -15,7 +15,7 @@ public class FillForm {
         repositorioForm.mobileNumber_txt.sendKeys(mobile);
         repositorioForm.birth.clear();
         repositorioForm.birth.sendKeys("", Keys.ENTER);
-        repositorioForm.submit_btn.click();
+        repositorioForm.current.sendKeys(Keys.TAB,Keys.TAB, Keys.ENTER);
     }
 
 

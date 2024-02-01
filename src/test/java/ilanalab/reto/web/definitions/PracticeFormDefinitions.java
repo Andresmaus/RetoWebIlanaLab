@@ -1,9 +1,6 @@
 package ilanalab.reto.web.definitions;
 
-import ilanalab.reto.web.step.CheckRegistration;
-import ilanalab.reto.web.step.FillForm;
-import ilanalab.reto.web.step.OpenDemoQaStep;
-import ilanalab.reto.web.step.SearchForm;
+import ilanalab.reto.web.step.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,11 +11,17 @@ public class PracticeFormDefinitions {
     @Steps
     OpenDemoQaStep openDemoQaStep;
     @Steps
-    SearchForm searchForm;
+    SearchFormStep searchForm;
     @Steps
-    FillForm fillForm;
+    FillFormStep fillForm;
     @Steps
-    CheckRegistration checkRegistration;
+    CheckRegistrationStep checkRegistration;
+    @Steps
+    SearchSliderStep sliderStep;
+    @Steps
+    MoveSlider moveSlider;
+    @Steps
+    SliderValue sliderValue;
 
 
 
@@ -40,5 +43,19 @@ public class PracticeFormDefinitions {
     @Then("I verify that the content is visible {string}")
     public void iVerifyThatTheContentIsVisible(String mensaje) {
         checkRegistration.message(mensaje);
+    }
+
+    @When("I am in the Slider section in the menu of DemoQA.com")
+    public void iAmInTheSliderSectionInTheMenuOfDemoQACom() {
+        sliderStep.slider();
+    }
+    @And("I drag the slider control to the position 3")
+    public void iDragTheSliderControlToThePosition3() {
+        moveSlider.move();
+    }
+
+    @Then("I verify that the displayed number is {string}")
+    public void iVerifyThatTheDisplayedNumberIs(String valor) {
+        sliderValue.value(valor);
     }
 }

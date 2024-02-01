@@ -32,9 +32,6 @@ public class RepositorioForm extends PageObject {
     @FindBy(id = "dateOfBirthInput")
     public WebElementFacade birth;
 
-    @FindBy(id = "submit")
-    public WebElementFacade submit_btn;
-
     @FindBy(id = "example-modal-sizes-title-lg")
     public WebElementFacade mensaje;
 

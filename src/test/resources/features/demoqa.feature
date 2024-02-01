@@ -17,3 +17,13 @@ Feature: Automated Testing using Selenium at DemoQA.com
     Examples:
       | firstName | lastName | email                      | mobile     | dateBirth  | content                        |
       | Andres    | Sanchez  | andressanchez@ilanalab.com | 1234567890 | 01/01/1990 | Thanks for submitting the form |
+
+  @Caso3
+  Scenario Outline: Verify the functionality of the carousel
+    When I am in the Slider section in the menu of DemoQA.com
+    And I drag the slider control to the position 3
+    Then I verify that the displayed number is "<slider>"
+
+    Examples:
+      | slider |
+      | 3      |

@@ -3,7 +3,7 @@ package ilanalab.reto.web.step;
 import ilanalab.reto.web.pageobject.RepositorioForm;
 import net.serenitybdd.annotations.Step;
 
-public class SearchForm {
+public class SearchFormStep {
     private RepositorioForm repositorioForm;
     @Step
     public void practiceForm() {

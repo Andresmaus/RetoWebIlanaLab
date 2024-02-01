@@ -4,7 +4,7 @@ import ilanalab.reto.web.pageobject.RepositorioForm;
 import net.serenitybdd.annotations.Step;
 import org.openqa.selenium.Keys;
 
-public class FillForm {
+public class FillFormStep {
     private RepositorioForm repositorioForm;
     @Step
     public void writeData(String firstName,String lastName, String email,String mobile,String dateBirth) {
